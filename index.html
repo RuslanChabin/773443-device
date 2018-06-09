@@ -10,7 +10,12 @@
       <a class="logo" href="index.html">
         <img src="img/logo.png" width="164" height="36" alt="Логотип магазина Device">
       </a>
-      <!--Форма поиска-->
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <p>
+          <label for="search" class="hidden">Форма поиска по сайту</label> 
+          <input type="search" name="search" placeholder="Поиск по сайту">  
+        </p>    
+      </form>
       <ul class="header_user_navigation">
           <li class="login_link">
             <a href="#">Войти</a>
@@ -118,7 +123,20 @@
           </li>
         </ul>
       </section>
-      <!--Кнопки для слайдера-->
+      <ul class="slider_buttons_list">
+        <li>
+          <input class="hidden" type="radio" name="slider_btn" id="slider_btn_1" checked>
+          <label for="slider_btn_1"></label>
+        </li>
+        <li>
+          <input class="hidden" type="radio" name="slider_btn" id="slider_btn_2">
+          <label for="slider_btn_2"></label>
+        </li>
+        <li>
+          <input class="hidden" type="radio" name="slider_btn" id="slider_btn_3">
+          <label for="slider_btn_3"></label>
+        </li>
+      </ul>
       <!--Слайдер промотоваров-->
       
       <section class="goods_category">
@@ -150,13 +168,16 @@
        <h2 class="hidden">Дополнительный сервис</h2>
         <ul class="services_menu">
           <li>
-            <a class="btn btn_yellow btn_services" href="#">Доставка</a>
+            <input class="hidden" type="radio" name="sevices" id="btn_delivery" checked>
+            <label class="btn btn_yellow btn_services" for="btn_delivery">Доставка</label>
           </li>
           <li>
-            <a class="btn btn_yellow btn_services" href="#">Гарантия</a>
+            <input class="hidden" type="radio" name="sevices" id="btn_guarantee">
+            <label class="btn btn_yellow btn_services" for="btn_guarantee">Гарантия</label>
           </li>
           <li>
-            <a class="btn btn_yellow btn_services" href="#">Кредит</a>
+            <input class="hidden" type="radio" name="sevices" id="btn_credit">
+            <label class="btn btn_yellow btn_services" for="btn_credit">Кредит</label>
           </li>
         </ul>
         <ul class="service_list">
@@ -222,7 +243,7 @@
           <a class="map_img" href="#">
             <img src="img/map.jpg" width="560" height="222" alt="г.Москва, ул.Строителей, 15">
           </a>
-          <a class="btn btn_yellow btn_write" href="#">Напишите нам</a>
+          <button class="btn btn_yellow btn_write" href="#">Напишите нам</button>
         </div>
       </section>
       <!--Подробная информация-->
@@ -274,15 +295,31 @@
   
   <section class="letter">
     <h2 class="hidden">Обратная связь</h2>
-    <!--Поле для формы-->
-    <span class="letter_close">x</span>
+    <form class="connection_form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="connection_item">
+        <lable for="connection_name">Ваше имя</lable>
+        <input id="connection_name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="connection_item">
+        <lable for="connection_email">Ваш e-mail</lable>
+        <input id="connection_email" type="text" name="email" placeholder="email@example.com">
+      </p>
+      <p class="connection_item">
+        <label for="connection_letter">Текст письма</label>
+        <input id="connection_letter" type="text" name="letter" placeholder="В свободной форме">
+      </p>
+      <button class="btn btn_yellow btn_submit" type="submit">Отправить</button> 
+      <button class="btn btn_yellow btn_close" type="button">Закрыть</button>     
+    </form>  
   </section>
   <!--Форма обратной связи-->
   
   <section class="map_popup">
     <h2 class="hidden">Подробная карта</h2>
-    <img src="img/map-big.jpg" width="960" height="559" alt="Большая карта">
-    <span class="letter_close">x</span>
+    <p>
+      <img src="img/map-big.jpg" width="960" height="559" alt="г.Москва, ул.Строителей, 15">
+    </p>
+    <button class="btn btn_yellow btn_close" type="button">Закрыть</button> 
   </section>
 <!--Большая карта-->
 

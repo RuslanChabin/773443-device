@@ -10,8 +10,12 @@
       <a class="logo" href="index.html">
         <img src="img/logo.png" width="164" height="36" alt="Логотип магазина Device">
       </a>
-      <!--Форма поиска-->
-      
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <p>
+          <label for="search" class="hidden">Форма поиска по сайту</label> 
+          <input type="search" name="search" placeholder="Поиск по сайту">  
+        </p>    
+      </form>
       <ul class="header_user_navigation">
           <li class="user_name">
             <a href="#">Валентин Петухов</a>
@@ -78,7 +82,51 @@
     
     <section class="filter">
       <h2>Фильтр:</h2>
-      <!--Форма для фильтров-->
+      <form class="filter_form" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Стоимость</legend>
+          <input type="range" min="0" max="10000" value="5000">
+        </fieldset>
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul class="filter_option">
+            <li>
+              <input class="hidden filter_input filter_input_checkbox" type="checkbox" class="hidden" name="black_color">
+              <label for="black_color">Черный</label>
+            </li>
+            <li>
+              <input class="hidden filter_input filter_input_checkbox" type="checkbox" class="hidden" name="white_color">
+              <label for="white_color">Белый</label>
+            </li>
+            <li>
+              <input class="hidden filter_input filter_input_checkbox" type="checkbox" class="hidden" name="blue_color">
+              <label for="blue_color">Синий</label>
+            </li>
+            <li>
+              <input class="hidden filter_input filter_input_checkbox" type="checkbox" class="hidden" name="red_color">
+              <label for="red_color">Красный</label>
+            </li>
+            <li>
+              <input class="hidden filter_input filter_input_checkbox" type="checkbox" class="hidden" name="pink_color">
+              <label for="pink_color">Розовый</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul class="filter_option">
+            <li>
+              <input class="hidden filter_input filter_input_radio" type="radio" name="bluetooth" value="include" id="with_bluetooth" checked>
+              <label for="with_bluetooth">Есть</label>
+            </li>
+            <li>
+              <input class="hidden filter_input filter_input_radio" type="radio" name="bluetooth" value="exclude" id="without_bluetooth">
+              <label for="without_bluetooth">Нет</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="btn btn_yellow btn_filter_show">Показать</button>
+      </form>
     </section>
       <!--Фильтр товаров-->
     
@@ -97,10 +145,10 @@
       </ul>
       <ul class="sort_list_priority">
         <li>
-          <a href="#">^</a>
+          <button type="button">^ Сортировать по возрастающей</button>
         </li>
         <li>
-          <a href="#">∨</a>
+          <button type="button">∨ Сортировать по убывающей</button>
         </li>
       </ul>
     </section>
@@ -110,10 +158,8 @@
       <h2 class="hidden">Каталог моноподов</h2>
       <ul class="catalog_list">
         <li class="catalog_item">
-         <p class="catalog_item_img">
-            <a href="#">
-              <img src="img/monopod-amateur.jpg" width="360" height="380" alt="Любительская селфи-палка">
-            </a>
+          <p class="catalog_item_img">
+            <img src="img/monopod-amateur.jpg" width="360" height="380" alt="Любительская селфи-палка">
           </p>
           <h3>
             <a href="#">
@@ -122,15 +168,13 @@
             <span class="catalog_item_price">500 ₽</span>
           </h3>
           <p>
-            <a class="btn btn_yellow btn_basket" href="#">В корзину</a>
-            <a class="compare">Добавить к сравнению</a>
+            <button type="button" class="btn btn_yellow btn_basket" href="#">В корзину</button>
+            <button class="btn btn_grey btn_compare">Добавить к сравнению</button>
           </p>
         </li> 
         <li class="catalog_item">
           <p class="catalog_item_img">
-            <a href="#">
-              <img src="img/monopod-pro.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-            </a>
+            <img src="img/monopod-pro.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
           </p>
           <h3>
             <a href="#">
@@ -139,15 +183,13 @@
             <span class="catalog_item_price">1500 ₽</span>
           </h3>
           <p>
-            <a class="btn btn_yellow btn_basket" href="#">В корзину</a>
-            <a class="compare">Добавить к сравнению</a>
+            <button type="button" class="btn btn_yellow btn_basket" href="#">В корзину</button>
+            <button class="btn btn_grey btn_compare">Добавить к сравнению</button>
           </p>
         </li> 
         <li class="catalog_item">
           <p class="catalog_item_img">
-            <a href="#">
-              <img src="img/monopod-waterproof.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-            </a>
+            <img src="img/monopod-waterproof.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
           </p>
           <h3>
             <a href="#">
@@ -156,15 +198,13 @@
             <span class="catalog_item_price">2 500 ₽</span>
           </h3>
           <p>
-            <a class="btn btn_yellow btn_basket" href="#">В корзину</a>
-            <a class="compare">Добавить к сравнению</a>
+            <button type="button" class="btn btn_yellow btn_basket" href="#">В корзину</button>
+            <button class="btn btn_grey btn_compare">Добавить к сравнению</button>
           </p>
         </li> 
         <li class="catalog_item">
           <p class="catalog_item_img">
-            <a href="#">
-              <img src="img/monopod-follow-me.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
-            </a>
+            <img src="img/monopod-follow-me.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
           </p>
           <h3>
             <a href="#">
@@ -173,8 +213,8 @@
             <span class="catalog_item_price">4 900 ₽</span>
           </h3>          
           <p>
-            <a class="btn btn_yellow btn_basket" href="#">В корзину</a>
-            <a class="compare">Добавить к сравнению</a>
+            <button type="button" class="btn btn_yellow btn_basket" href="#">В корзину</button>
+            <button class="btn btn_grey btn_compare">Добавить к сравнению</button>
           </p>
         </li> 
       </ul>
