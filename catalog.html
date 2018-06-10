@@ -83,12 +83,12 @@
     <section class="filter">
       <h2>Фильтр:</h2>
       <form class="filter_form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="field_cost">
-          <legend class="field_cost">Стоимость</legend>
+        <fieldset class="filter_form_fieldset">
+          <legend class="filter_form_legend">Стоимость</legend>
           <input type="range" min="0" max="10000" value="5000">
         </fieldset>
-        <fieldset class="field_color">
-          <legend class="field_color">Цвет</legend>
+        <fieldset class="filter_form_fieldset">
+          <legend class="filter_form_legend">Цвет</legend>
           <ul class="filter_list">
             <li>
               <input class="hidden filter_input filter_input_checkbox" id="black_color" type="checkbox" name="color" value="black">
@@ -112,8 +112,8 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="field_bluetooth">
-          <legend class="field_bluetooth">Bluetooth</legend>
+        <fieldset class="filter_form_fieldset">
+          <legend class="filter_form_legend">Bluetooth</legend>
           <ul class="filter_list">
             <li>
               <input class="hidden filter_input filter_input_radio" id="with_bluetooth" type="radio" name="bluetooth" value="yes" checked>
@@ -145,12 +145,14 @@
       </ul>
       <ul class="sort_list_priority">
         <li>
-          <span class="hidden">Сортировать по возрастающей</span>
-          <a href="#">^</a>
+          <a href="#">^
+            <span class="hidden">Сортировать по возрастающей</span>
+          </a>
         </li>
         <li>
-          <span class="hidden">Сортировать по убывающей</span>
-          <a href="#">∨</a>
+          <a href="#">∨
+            <span class="hidden">Сортировать по убывающей</span>
+          </a>
         </li>
       </ul>
     </section>
