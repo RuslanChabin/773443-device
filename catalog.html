@@ -10,10 +10,10 @@
       <a class="logo" href="index.html">
         <img src="img/logo.png" width="164" height="36" alt="Логотип магазина Device">
       </a>
-      <form action="https://echo.htmlacademy.ru" method="get">
+      <form class="searching_form" action="https://echo.htmlacademy.ru" method="get">
         <p>
           <label for="search" class="hidden">Форма поиска по сайту</label> 
-          <input type="search" name="search" placeholder="Поиск по сайту">  
+          <input id="search" type="search" name="search" placeholder="Поиск по сайту">  
         </p>    
       </form>
       <ul class="header_user_navigation">
@@ -83,44 +83,44 @@
     <section class="filter">
       <h2>Фильтр:</h2>
       <form class="filter_form" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
-          <legend>Стоимость</legend>
+        <fieldset class="field_cost">
+          <legend class="field_cost_legend">Стоимость</legend>
           <input type="range" min="0" max="10000" value="5000">
         </fieldset>
-        <fieldset>
-          <legend>Цвет</legend>
-          <ul class="filter_option">
+        <fieldset class="field_color">
+          <legend class="field_color_legend">Цвет</legend>
+          <ul class="filter_list">
             <li>
-              <input class="hidden filter_input filter_input_checkbox" type="checkbox" class="hidden" name="black_color">
+              <input class="hidden filter_input filter_input_checkbox" id="black_color" type="checkbox" name="color" value="black">
               <label for="black_color">Черный</label>
             </li>
             <li>
-              <input class="hidden filter_input filter_input_checkbox" type="checkbox" class="hidden" name="white_color">
+              <input class="hidden filter_input filter_input_checkbox" id="white_color" type="checkbox" name="color" value="white">
               <label for="white_color">Белый</label>
             </li>
             <li>
-              <input class="hidden filter_input filter_input_checkbox" type="checkbox" class="hidden" name="blue_color">
+              <input class="hidden filter_input filter_input_checkbox" id="blue_color" type="checkbox" name="color" value="blue">
               <label for="blue_color">Синий</label>
             </li>
             <li>
-              <input class="hidden filter_input filter_input_checkbox" type="checkbox" class="hidden" name="red_color">
+              <input class="hidden filter_input filter_input_checkbox" id="red_color" type="checkbox" name="color" value="red">
               <label for="red_color">Красный</label>
             </li>
             <li>
-              <input class="hidden filter_input filter_input_checkbox" type="checkbox" class="hidden" name="pink_color">
+              <input class="hidden filter_input filter_input_checkbox" id="pink_color" type="checkbox" name="color" value="pink">
               <label for="pink_color">Розовый</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Bluetooth</legend>
-          <ul class="filter_option">
+        <fieldset class="field_bluetooth">
+          <legend class="field_bluetooth_legend">Bluetooth</legend>
+          <ul class="filter_list">
             <li>
-              <input class="hidden filter_input filter_input_radio" type="radio" name="bluetooth" value="include" id="with_bluetooth" checked>
+              <input class="hidden filter_input filter_input_radio" id="with_bluetooth" type="radio" name="bluetooth" value="yes" checked>
               <label for="with_bluetooth">Есть</label>
             </li>
             <li>
-              <input class="hidden filter_input filter_input_radio" type="radio" name="bluetooth" value="exclude" id="without_bluetooth">
+              <input class="hidden filter_input filter_input_radio" id="without_bluetooth" type="radio" name="bluetooth" value="no">
               <label for="without_bluetooth">Нет</label>
             </li>
           </ul>
@@ -145,10 +145,10 @@
       </ul>
       <ul class="sort_list_priority">
         <li>
-          <button type="button">^ Сортировать по возрастающей</button>
+          <a href="#">^ Сортировать по возрастающей</a>
         </li>
         <li>
-          <button type="button">∨ Сортировать по убывающей</button>
+          <a href="#">∨ Сортировать по убывающей</a>
         </li>
       </ul>
     </section>
@@ -168,8 +168,8 @@
             <span class="catalog_item_price">500 ₽</span>
           </h3>
           <p>
-            <button type="button" class="btn btn_yellow btn_basket" href="#">В корзину</button>
-            <button class="btn btn_grey btn_compare">Добавить к сравнению</button>
+            <a href="#" class="btn btn_yellow btn_basket">В корзину</a>
+            <a href="#" class="btn btn_grey btn_compare">Добавить к сравнению</a>
           </p>
         </li> 
         <li class="catalog_item">
@@ -183,8 +183,8 @@
             <span class="catalog_item_price">1500 ₽</span>
           </h3>
           <p>
-            <button type="button" class="btn btn_yellow btn_basket" href="#">В корзину</button>
-            <button class="btn btn_grey btn_compare">Добавить к сравнению</button>
+            <a href="#" class="btn btn_yellow btn_basket">В корзину</a>
+            <a href="#" class="btn btn_grey btn_compare">Добавить к сравнению</a>
           </p>
         </li> 
         <li class="catalog_item">
@@ -198,8 +198,8 @@
             <span class="catalog_item_price">2 500 ₽</span>
           </h3>
           <p>
-            <button type="button" class="btn btn_yellow btn_basket" href="#">В корзину</button>
-            <button class="btn btn_grey btn_compare">Добавить к сравнению</button>
+            <a href="#" class="btn btn_yellow btn_basket">В корзину</a>
+            <a href="#" class="btn btn_grey btn_compare">Добавить к сравнению</a>
           </p>
         </li> 
         <li class="catalog_item">
@@ -213,8 +213,8 @@
             <span class="catalog_item_price">4 900 ₽</span>
           </h3>          
           <p>
-            <button type="button" class="btn btn_yellow btn_basket" href="#">В корзину</button>
-            <button class="btn btn_grey btn_compare">Добавить к сравнению</button>
+            <a href="#" class="btn btn_yellow btn_basket">В корзину</a>
+            <a href="#" class="btn btn_grey btn_compare">Добавить к сравнению</a>
           </p>
         </li> 
       </ul>

@@ -7,13 +7,13 @@
   <body>
   <header class="main_header">
     <nav class="main_navigation">
-      <a class="logo" href="index.html">
+      <a class="logo" href="#">
         <img src="img/logo.png" width="164" height="36" alt="Логотип магазина Device">
       </a>
-      <form action="https://echo.htmlacademy.ru" method="get">
+      <form class="searching_form" action="https://echo.htmlacademy.ru" method="get">
         <p>
-          <label for="search" class="hidden">Форма поиска по сайту</label> 
-          <input type="search" name="search" placeholder="Поиск по сайту">  
+          <label class="hidden" for="search">Форма поиска по сайту</label> 
+          <input id="search" type="search" name="search" placeholder="Поиск по сайту">  
         </p>    
       </form>
       <ul class="header_user_navigation">
@@ -125,15 +125,15 @@
       </section>
       <ul class="slider_buttons_list">
         <li>
-          <input class="hidden" type="radio" name="slider_btn" id="slider_btn_1" checked>
+          <input class="hidden" id="slider_btn_1" type="radio" name="slider_btn" checked>
           <label for="slider_btn_1"></label>
         </li>
         <li>
-          <input class="hidden" type="radio" name="slider_btn" id="slider_btn_2">
+          <input class="hidden" id="slider_btn_2" type="radio" name="slider_btn">
           <label for="slider_btn_2"></label>
         </li>
         <li>
-          <input class="hidden" type="radio" name="slider_btn" id="slider_btn_3">
+          <input class="hidden" id="slider_btn_3" type="radio" name="slider_btn">
           <label for="slider_btn_3"></label>
         </li>
       </ul>
@@ -168,15 +168,15 @@
        <h2 class="hidden">Дополнительный сервис</h2>
         <ul class="services_menu">
           <li>
-            <input class="hidden" type="radio" name="sevices" id="btn_delivery" checked>
+            <input class="hidden" id="btn_delivery" type="radio" name="sevices" checked>
             <label class="btn btn_yellow btn_services" for="btn_delivery">Доставка</label>
           </li>
           <li>
-            <input class="hidden" type="radio" name="sevices" id="btn_guarantee">
+            <input class="hidden" id="btn_guarantee" type="radio" name="sevices">
             <label class="btn btn_yellow btn_services" for="btn_guarantee">Гарантия</label>
           </li>
           <li>
-            <input class="hidden" type="radio" name="sevices" id="btn_credit">
+            <input class="hidden" id="btn_credit" type="radio" name="sevices">
             <label class="btn btn_yellow btn_services" for="btn_credit">Кредит</label>
           </li>
         </ul>
@@ -243,14 +243,14 @@
           <a class="map_img" href="#">
             <img src="img/map.jpg" width="560" height="222" alt="г.Москва, ул.Строителей, 15">
           </a>
-          <button class="btn btn_yellow btn_write" href="#">Напишите нам</button>
+          <button class="btn btn_yellow btn_write">Напишите нам</button>
         </div>
       </section>
       <!--Подробная информация-->
   </main>
   
   <footer class="main_footer">
-    <a class="device_logo" href="index.html">
+    <a class="device_logo" href="#">
       <img src="img/logo-yellow.png" width="164" height="36" alt="Логотип магазина Device">
     </a>
     <address>г.Москва, ул.Строителей, 15</address>
@@ -293,33 +293,33 @@
     </a>
   </footer>
   
-  <section class="letter">
+  <section class="modal modal_write_us">
+    <button class="btn btn_yellow btn_close" type="button">Закрыть</button> 
     <h2 class="hidden">Обратная связь</h2>
-    <form class="connection_form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="connection_item">
-        <lable for="connection_name">Ваше имя</lable>
-        <input id="connection_name" type="text" name="name" placeholder="Имя Фамилия">
+    <form class="modal_form" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label for="user_name">Ваше имя</label>
+        <input id="user_name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
-      <p class="connection_item">
-        <lable for="connection_email">Ваш e-mail</lable>
-        <input id="connection_email" type="text" name="email" placeholder="email@example.com">
+      <p>
+        <label for="user_email">Ваш e-mail</label>
+        <input id="user_email" type="text" name="email" placeholder="email@example.com">
       </p>
-      <p class="connection_item">
-        <label for="connection_letter">Текст письма</label>
-        <input id="connection_letter" type="text" name="letter" placeholder="В свободной форме">
+      <p class="modal_write_us_message">
+        <label for="message_area">Текст письма</label>
+        <textarea id="message_area" name="letter" rows="10" placeholder="В свободной форме"></textarea>
       </p>
       <button class="btn btn_yellow btn_submit" type="submit">Отправить</button> 
-      <button class="btn btn_yellow btn_close" type="button">Закрыть</button>     
     </form>  
   </section>
   <!--Форма обратной связи-->
   
-  <section class="map_popup">
+  <section class="modal modal_map">
+    <button class="btn btn_yellow btn_close" type="button">Закрыть</button> 
     <h2 class="hidden">Подробная карта</h2>
     <p>
       <img src="img/map-big.jpg" width="960" height="559" alt="г.Москва, ул.Строителей, 15">
     </p>
-    <button class="btn btn_yellow btn_close" type="button">Закрыть</button> 
   </section>
 <!--Большая карта-->
 
