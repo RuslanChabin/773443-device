@@ -7,7 +7,7 @@
   <body>
   <header class="main_header">
     <nav class="main_navigation">
-      <a class="logo" href="#">
+      <a class="logo">
         <img src="img/logo.png" width="164" height="36" alt="Логотип магазина Device">
       </a>
       <form class="searching_form" action="https://echo.htmlacademy.ru" method="get">
@@ -36,7 +36,7 @@
               <a href="#">Виртуальная реальность</a>
             </li>
             <li>
-              <a href="#">Моноподы для селфи</a>
+              <a href="catalog.html">Моноподы для селфи</a>
             </li>
             <li>
               <a href="#">Экшн-камеры</a>
@@ -250,7 +250,7 @@
   </main>
   
   <footer class="main_footer">
-    <a class="device_logo" href="#">
+    <a class="device_logo">
       <img src="img/logo-yellow.png" width="164" height="36" alt="Логотип магазина Device">
     </a>
     <address>г.Москва, ул.Строителей, 15</address>
@@ -294,28 +294,28 @@
   </footer>
   
   <section class="modal modal_write_us">
-    <button class="btn btn_yellow btn_close" type="button">Закрыть</button> 
+    <button class="btn btn_yellow btn_modal_write_us_close" type="button">Закрыть</button> 
     <h2 class="hidden">Обратная связь</h2>
     <form class="modal_form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
+      <p class="modal_write_us_item">
         <label for="user_name">Ваше имя</label>
         <input id="user_name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
-      <p>
+      <p class="modal_write_us_item">
         <label for="user_email">Ваш e-mail</label>
         <input id="user_email" type="text" name="email" placeholder="email@example.com">
       </p>
       <p class="modal_write_us_message">
         <label for="message_area">Текст письма</label>
-        <textarea id="message_area" name="letter" rows="10" placeholder="В свободной форме"></textarea>
+        <textarea id="message_area" name="message" rows="10" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="btn btn_yellow btn_submit" type="submit">Отправить</button> 
+      <button class="btn btn_yellow btn_modal_write_us_submit" type="submit">Отправить</button> 
     </form>  
   </section>
   <!--Форма обратной связи-->
   
   <section class="modal modal_map">
-    <button class="btn btn_yellow btn_close" type="button">Закрыть</button> 
+    <button class="btn btn_yellow btn_modal_map_close" type="button">Закрыть</button> 
     <h2 class="hidden">Подробная карта</h2>
     <p>
       <img src="img/map-big.jpg" width="960" height="559" alt="г.Москва, ул.Строителей, 15">
