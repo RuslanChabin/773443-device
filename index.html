@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Главная страница | Магазин для гиков Device</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main_header">
@@ -14,7 +17,8 @@
         <p>
           <label class="hidden" for="search">Форма поиска по сайту</label> 
           <input id="search" type="search" name="search" placeholder="Поиск по сайту">  
-        </p>    
+          <a class="btn_search" href="#">Найти</a> 
+        </p>   
       </form>
       <ul class="header_user_navigation">
           <li class="login_link">
@@ -92,7 +96,7 @@
           <li class="slider_item">
             <img src="img/slider-bracelet.png" width="345" height="485" alt="Фитнес браслет">
             <span class="slide_number">02</span>
-            <p class="sldier_title">Худеем правильно!</p>
+            <p class="slider_title">Худеем правильно!</p>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="btn btn_yellow btn_promo" href="#">Подробнее</a>
             <table class="slider_table">
@@ -107,7 +111,7 @@
           <li class="slider_item">
             <img src="img/slider-quadcopter.png" width="526" height="334" alt="Квадрокоптер">
             <span class="slide_number">03</span>
-            <p class="sldier_title">Пархает как бабочка, жалит как пчела!</p>
+            <p class="slider_title">Пархает как бабочка, жалит как пчела!</p>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a class="btn btn_yellow btn_promo" href="#">Подробнее</a>
             <table class="slider_table">
@@ -143,22 +147,40 @@
         <h2 class="hidden">Категории товаров</h2>
         <ul class="goods_category_list">
           <li class="goods_category_item">
-            <a href="#">Виртуальная реальность</a>
+            <a href="#">
+              <span></span>
+              <p>Виртуальная реальность</p>
+            </a>
           </li>
           <li class="goods_category_item">
-            <a href="#">Моноподы для селфи</a>
+            <a href="#">
+              <span></span>
+              <p>Моноподы для селфи</p>
+            </a>
           </li>
           <li class="goods_category_item">
-            <a href="#">Экшн-камеры</a>
+            <a href="#">
+              <span></span>
+              <p>Экшн-камеры</p>
+            </a>
           </li>
           <li class="goods_category_item">
-            <a href="#">Фитнес браслеты</a>
+            <a href="#">
+              <span></span>
+              <p>Фитнес браслеты</p>
+            </a>
           </li>
           <li class="goods_category_item">
-            <a href="#">Умные часы</a>
+            <a href="#">
+              <span></span>
+              <p>Умные часы</p>
+            </a>
           </li>
           <li class="goods_category_item">
-            <a href="#">Квадрокоптеры</a>
+            <a href="#">
+              <span></span>
+              <p>Квадрокоптеры</p>
+            </a>
           </li>
         </ul>
       </section>
@@ -200,24 +222,24 @@
       <section class="brands">
         <h2 class="hidden">Брэнды</h2>
           <ul class="brands_list">
-            <li>
+            <li class="brands_list_item">
               <a href="#">
-                <img src="img/logo-dji.jpg" width="260" height="100" alt="Логотип DJI">
+                <span class="hidden">Логотип компании Dji</span>
               </a>
             </li>
-            <li>
+            <li class="brands_list_item">
               <a href="#">
-                <img src="img/logo-sp-gadgets.jpg" width="260" height="100" alt="Логотип SP Gadgets">
+                <span class="hidden">Логотип компании SP Gadgets</span>
               </a>
             </li>
-            <li>
+            <li class="brands_list_item">
               <a href="#">
-                <img src="img/logo-go-pro.jpg" width="260" height="100" alt="Логотип GoPro">
+                <span class="hidden">Логотип компании GoPro</span>
               </a>
             </li>
-            <li>
+            <li class="brands_list_item">
               <a href="#">
-                <img src="img/logo-vive.jpg" width="260" height="100" alt="Логотип Vive">
+                <span class="hidden">Логотип компании Vive</span>
               </a>
             </li>
           </ul>
@@ -231,7 +253,7 @@
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul class="about_us_list">
-            <li>Деловые линии</li>
+            <li>Деловые Линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
@@ -253,7 +275,7 @@
     <a class="device_logo">
       <img src="img/logo-yellow.png" width="164" height="36" alt="Логотип магазина Device">
     </a>
-    <address>г.Москва, ул.Строителей, 15</address>
+    <address>г. Москва, ул. Строителей, 15</address>
     <ul class="footer_user_navigation">
       <li class="login_link">
         <a href="#">Войти</a>
@@ -287,7 +309,7 @@
         <a class="btn btn_grey social_btn" href="#">twitter</a>
       </li>
     </ul>
-    <a href="tel:+74954959595">Тел.:+7(495) 495-95-95</a>
+    <a href="tel:+74954959595">Тел.:+7 (495) 495-95-95</a>
     <a class="htmlacademy_logo" href="https://htmlacademy.ru/intensive/htmlcss">
       <img src="img/logo-html-academy.svg" width="27" height="35" alt="Логотип HTML Academy">
     </a>
@@ -298,15 +320,15 @@
     <h2 class="hidden">Обратная связь</h2>
     <form class="modal_form" action="https://echo.htmlacademy.ru" method="post">
       <p class="modal_write_us_item">
-        <label for="user_name">Ваше имя</label>
+        <label for="user_name">Ваше имя:</label>
         <input id="user_name" type="text" name="name" placeholder="Имя Фамилия">
       </p>
       <p class="modal_write_us_item">
-        <label for="user_email">Ваш e-mail</label>
-        <input id="user_email" type="text" name="email" placeholder="email@example.com">
+        <label for="user_email">Ваш e-mail:</label>
+        <input id="user_email" type="email" name="email" placeholder="email@example.com">
       </p>
       <p class="modal_write_us_message">
-        <label for="message_area">Текст письма</label>
+        <label for="message_area">Текст письма:</label>
         <textarea id="message_area" name="message" rows="10" placeholder="В свободной форме"></textarea>
       </p>
       <button class="btn btn_yellow btn_modal_write_us_submit" type="submit">Отправить</button> 
