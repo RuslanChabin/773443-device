@@ -1,25 +1,141 @@
 @font-face {
-    font-family: 'gilroyextrabold';
+    font-family: 'GilroyExtrabold';
     src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
          url('../fonts/gilroy-extrabold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'gilroylight';
+    font-family: 'GilroyExtrabold';
+    src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GilroyExtrabold';
+    src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GilroyExtrabold';
+    src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-extrabold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GilroyLight';
     src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
          url('../fonts/gilroy-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'GilroyLight';
+    src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-light-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GilroyLight';
+    src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GilroyLight';
+    src: url('../fonts/gilroy-light-webfont.woff2') format('woff2'),
+         url('../fonts/gilroy-light-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans.woff2') format('woff2'),
+         url('../fonts/opensans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans.woff2') format('woff2'),
+         url('../fonts/opensans.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans.woff2') format('woff2'),
+         url('../fonts/opensans.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/opensans.woff2') format('woff2'),
+         url('../fonts/opensans.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'OpensansLight';
+    src: url('../fonts/opensanslight.woff2') format('woff2'),
+         url('../fonts/opensanslight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpensansLight';
+    src: url('../fonts/opensanslight.woff2') format('woff2'),
+         url('../fonts/opensanslight.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpensansLight';
+    src: url('../fonts/opensanslight.woff2') format('woff2'),
+         url('../fonts/opensanslight.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'OpensansLight';
+    src: url('../fonts/opensanslight.woff2') format('woff2'),
+         url('../fonts/opensanslight.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* ====== Fonts ====== */
+
 body {
     margin: 0;
     padding: 0;
     
-    font-family: 'Open Sans', 'Verdana', sans-serif;
+    font-family: 'OpenSans', 'Verdana', sans-serif;
     font-size: 15px;
-    line-height: 30px;
     font-weight: 300;
+    line-height: 30px;
     letter-spacing: 0.15px;
     color: #464646;
     
@@ -31,26 +147,32 @@ a {
     color: #000000;
 }
 
+.btn {
+    font-family: 'GilroyExtrabold', 'Verdana', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    color: #000000;
+    
+    border: none;
+}
+
+.btn_yellow {
+    background-color: #f0c52e;
+}
+
+/* ====== Global ====== */
+
 .main_header {
     background-color: #f7e296;
 }
 
-.logo:hover,
-.device_logo:hover,
-.searching_form input:hover,
-.header_user_navigation a:hover,
-.site_navigation a:hover,
-.footer_services a:hover,
-.htmlacademy_logo:hover {
+.logo:hover {
     opacity: 0.6;
 }
 
-.logo:active,
-.device_logo:active,
-.header_user_navigation a:active,
-.site_navigation a:active,
-.footer_services a:active,
-.htmlacademy_logo:active {
+.logo:active {
     opacity: 0.3;
 }
 
@@ -58,6 +180,10 @@ a {
     background-color: #f7e296;
     opacity: 0.3; 
     border: none;
+}
+
+.searching_form input:hover {
+    opacity: 0.6;
 }
 
 .searching_form input:focus {
@@ -74,150 +200,142 @@ a {
 }
 
 .btn:active {
-    color: rgba(0,0,0,0.3)
+    color: rgba(0, 0, 0, 0.3)
 }
 
-.header_user_navigation, 
-.site_navigation, 
-.site_navigation_dropdown, 
-.slider_list, 
-.slider_buttons_list, 
-.goods_category_list, 
-.services_menu, 
-.service_list, 
-.brands_list,
-.sort_list_category,
-.sort_list_priority,
-.filter_list,
-.pagination_list,
-.catalog_list {
+.header_user_navigation {
     list-style: none;
 }
 
+.header_user_navigation a:hover {
+    opacity: 0.6;
+}
+
+.header_user_navigation a:active {
+    opacity: 0.3;
+}
+
+.site_navigation {
+    list-style: none;
+}
+
+.site_navigation a:hover {
+    opacity: 0.6;
+}
+
+.site_navigation a:active {
+    opacity: 0.3;
+}
+
 .site_navigation a {
-    font-family: 'gilroyextrabold', 'Verdana', sans-serif;
+    font-family: 'GilroyExtrabold', 'Verdana', sans-serif;
     font-size: 18px;
-    text-transform: uppercase;
     line-height: 24px;
     letter-spacing: 3.6px;
+    text-transform: uppercase;
     color: #000000
 }
 
+, 
+.site_navigation_dropdown {
+    list-style: none;
+}
+
 .site_navigation_dropdown a {
-    font-family: 'Open Sans', 'Verdana', sans-serif;
+    font-family: 'OpenSans', 'Verdana', sans-serif;
     font-size: 15px;
     text-transform: none;
     letter-spacing: normal;
 }
 
+/* ====== Header ====== */
+
+.slider_list {
+    list-style: none;
+}
+
 .slider_title {
-    font-family: 'gilroyextrabold', 'Verdana', sans-serif;
+    font-family: 'GilroyExtrabold', 'Verdana', sans-serif;
     font-size: 47px;
     line-height: 56px;
     letter-spacing: 0.47px;
 }
 
 .slider_table_value {
-    font-family: 'gilroylight', 'Verdana', sans-serif;
+    font-family: 'GilroyLight', 'Verdana', sans-serif;
     font-size: 36px;
     line-height: 48px;
     letter-spacing: 0.36px;
 }
 
-.btn {
-    font-family: 'gilroyextrabold', 'Verdana', sans-serif;
-    font-size: 18px;
-    letter-spacing: 3.6px;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #000000;
-    border: none;
+.slider_buttons_list {
+    list-style: none;
 }
 
-.btn_yellow {
-    background-color: #f0c52e;
-}
+/* ====== Slider ====== */
 
-input[name="sevices"]:checked ~ label {
-    background-color: #000000;
-    color: #f7e184;
-}
-
-.goods_category_item, .modal_form label {
-    font-family: 'gilroyextrabold', 'Verdana', sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    color: #000000;
+.goods_category_list {
+    list-style: none;
 }
 
 .goods_category_item {
+    font-family: 'GilroyExtrabold', 'Verdana', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
     letter-spacing: 0.18px;
-    background-image: linear-gradient(#f7e296 160px, #ffffff 160px);
+    color: #000000;
+    
     width: 160px;
 }
 
-.goods_category_item:hover {
-    background-image: linear-gradient(#f0c52e 160px, #ffffff 160px);
-
-}
 .goods_category_item p {
     margin: 0;
 }
-.goods_category_item span {
-    display: block;
-    margin: 0;
-    width: 160px;
-    height: 160px;
-    background-color: transparent;   
+
+.goods_category_item svg {
+    background-color: rgb(247, 226, 150)
 }
 
-.goods_category_item a:active {
-    display: block;
-    opacity: 0.3;  
+.goods_category_link:hover svg {
+    background-color: #f0c52e;
 }
 
-.goods_category_item:first-child span{
-    background-image: url(../img/goods-virtual-reality.svg);
-    background-repeat: no-repeat;
-    background-position: center;
+.goods_category_link:active p {
+    opacity: 0.3;
 }
 
-.goods_category_item:nth-child(2) span {
-    background-image: url(../img/goods-monopods.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
+.goods_category_link:active g {
+    fill: rgba(54, 54, 54, 0.3);
 }
 
-.goods_category_item:nth-child(3) span {
-    background-image: url(../img/goods-cameras.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
+/* ====== Goods_category ====== */
 
-.goods_category_item:nth-child(4) span {
-    background-image: url(../img/goods-bracelets.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.goods_category_item:nth-child(5) span {
-    background-image: url(../img/goods-watches.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.goods_category_item:last-child span {
-    background-image: url(../img/goods-quadcoters.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.service_item h3, .device_information h3{
-    font-family: 'gilroyextrabold', 'Verdana', sans-serif;
+.service_item h3 {
+    font-family: 'GilroyExtrabold', 'Verdana', sans-serif;
     font-size: 47px;
     letter-spacing: 0.47px;
     line-height: 48px;
     color: #000000
+}
+
+.services_menu {
+    list-style: none;
+}
+
+.service_list {
+    list-style: none;
+}
+
+.services input:checked ~ label {
+    background-color: #000000;
+    
+    color: #f7e184;
+}
+
+/* ====== Servicees ====== */
+ 
+.brands_list {
+    list-style: none;
 }
 
 .brands_list a {
@@ -258,26 +376,43 @@ input[name="sevices"]:checked ~ label {
     background-image: url(../img/logo-vive.jpg);
 }
 
+/* ====== Brands ====== */
+
+.device_information h3{
+    font-family: 'GilroyExtrabold', 'Verdana', sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+    letter-spacing: 0.47px;
+    color: #000000
+}
 
 .about_us_list {
-    font-family: 'gilroyextrabold', 'Verdana', sans-serif;
+    font-family: 'GilroyExtrabold', 'Verdana', sans-serif;
     color: #000000;
 }
+
+/* ====== About ====== */
 
 .main_footer {
     background-color: #464646;
 }
 
-.footer_user_navigation a, 
-.footer_services a, 
-.main_footer a, 
-.main_footer address {
+.device_logo:hover {
+    opacity: 0.6;
+}
+
+.device_logo:active {
+    opacity: 0.3;
+}
+ 
+.main_footer a {
     color: #ffffff;
 }
 
 .main_footer address {
     font-style: normal;
     letter-spacing:normal;
+    color: #ffffff
 }
 
 .footer_user_navigation a {
@@ -293,12 +428,19 @@ input[name="sevices"]:checked ~ label {
 }
 
 .footer_services a {
-    font-family: 'gilroyextrabold', 'Verdana', sans-serif;
+    font-family: 'GilroyExtrabold', 'Verdana', sans-serif;
     font-size: 18px;
-    letter-spacing: 3.6px;
     line-height: 24px;
+    letter-spacing: 3.6px;
     text-transform: uppercase;
-    color: #ffffff;
+}
+
+.footer_services a:hover {
+    opacity: 0.6;
+}
+
+.footer_services a:active {
+    opacity: 0.3;
 }
 
 .social_btn {
@@ -314,6 +456,16 @@ input[name="sevices"]:checked ~ label {
     opacity: 0.1;
 }
 
+.htmlacademy_logo:hover {
+    opacity: 0.6;
+}
+
+.htmlacademy_logo:active {
+    opacity: 0.3;
+}
+
+/* ====== Footer ====== */
+
 .modal_form input, 
 .modal_form textarea {
     font-size: 14px;
@@ -321,6 +473,13 @@ input[name="sevices"]:checked ~ label {
     opacity: 0.5;
     background-color: #f2f2f2;
     color: rgba(70, 70, 70, 0.4)
+}
+
+.modal_form label {
+    font-family: 'GilroyExtrabold', 'Verdana', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
 }
 
 .modal_form input:hover, 
@@ -363,15 +522,21 @@ input[name="sevices"]:checked ~ label {
     opacity: 0.3;
 }
 
+/* ====== Modal_windows ====== */
+
 .page_title {
-    font-family: 'gilroyextrabold', 'Verdana', sans-serif;
+    font-family: 'GilroyExtrabold', 'Verdana', sans-serif;
     font-size: 47px;
     line-height: 48px;
     letter-spacing: 0.47px;
     color: #000000;
 }
 
-.breadcrumbs, .breadcrumbs a {
+.breadcrumbs {
+    color: rgba(0, 0, 0, 0.3)
+}
+
+.breadcrumbs a {
     color: rgba(0, 0, 0, 0.3)
 }
 
@@ -383,30 +548,33 @@ input[name="sevices"]:checked ~ label {
     color: rgba(0, 0, 0, 0.1)
 }
 
+/* ====== Catalog_page_breadcrumbs ====== */
+
 .filter {
     background-color: #efefef;
 }
 
-.filter_title, 
-.sorting_title {
-    font-family: 'gilroyextrabold', 'Verdana', sans-serif;
+.filter_title {
+    font-family: 'GilroyExtrabold', 'Verdana', sans-serif;
     font-size: 14px;
-    text-transform: uppercase;
     line-height: 24px;
     letter-spacing: 2.8px;
+    text-transform: uppercase;
     color: #000000;
-}
-
-.filter_title{
+    
     background-color: rgba(219, 219, 219, 0.08)
 }
 
-.filter_form_legend, .catalog_category {
-    font-family: 'gilroyextrabold', 'Verdana', sans-serif;
+.filter_form_legend {
+    font-family: 'GilroyExtrabold', 'Verdana', sans-serif;
     font-size: 18px;
-    letter-spacing: 0.18px;
     line-height: 24px;
+    letter-spacing: 0.18px;
     color: #000000;
+}
+
+.filter_list {
+    list-style: none;
 }
 
 .filter_list label {
@@ -416,22 +584,45 @@ input[name="sevices"]:checked ~ label {
     color: #000000;
 }
 
+/* ====== Catalog_page_filter_field ====== */
+
 .sorting{
     background-color: rgba(239, 239, 239, 1)
 }
 
-.sort_list_category a,
-.sort_list_priority a {
+.sorting_title {
+    font-family: 'GilroyExtrabold', 'Verdana', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 2.8px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.sort_list_category {
+    list-style: none;
+}
+
+.sorting a {
     opacity: 0.3;
 }
 
-.sort_list_category a:hover, .sort_list_priority a:hover {
+.sorting a:hover {
     opacity: 0.6;
 }
 
-.sort_list_category a:active, 
-.sort_list_priority a:active {
+.sorting a:active {
     opacity: 1;
+}
+
+.sort_list_priority {
+    list-style: none;
+}
+
+/* ====== Catalog_page_sorting_field ====== */
+
+.catalog_list {
+    list-style: none;
 }
 
 .catalog_item_img:hover {
@@ -439,10 +630,18 @@ input[name="sevices"]:checked ~ label {
 } 
 
 .catalog_item_price {
-    font-family: 'gilroylight', 'Verdana', sans-serif;
+    font-family: 'GilroyLight', 'Verdana', sans-serif;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.16px;
+    color: #000000;
+}
+
+.catalog_category {
+    font-family: 'GilroyExtrabold', 'Verdana', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.18px;
     color: #000000;
 }
 
@@ -458,32 +657,53 @@ input[name="sevices"]:checked ~ label {
     opacity: 0.2;
 }
 
+/* ====== Catalog_page_monopods_catalog ====== */
+
 .pagination_list {
+    list-style: none;
+    
     background-color: #ebebeb;
 }
 
 .pagination_item a{
-    font-family: 'gilroyextrabold', 'Verdana', sans-serif;
+    font-family: 'GilroyExtrabold', 'Verdana', sans-serif;
     font-size: 16px;
-    text-transform: uppercase;
     line-height: 24px;
     letter-spacing: 3.2px;
+    text-transform: uppercase;
     color: rgba(0, 0, 0, 0.3);
 }
 
-.pagination_item_current a, 
-.pagination_item_prev a, 
-.pagination_item_next a{
+.pagination_item_current a {
     color: rgba(0, 0, 0, 1);
 }
 
-.pagination_item_prev a:hover, 
+.pagination_item_prev a {
+    color: rgba(0, 0, 0, 1);
+}
+
+.pagination_item_next a {
+    color: rgba(0, 0, 0, 1);
+}
+
+.pagination_item_prev a:hover {
+    background-color: #d9d9d9;
+}
+
 .pagination_item_next a:hover {
     background-color: #d9d9d9;
 }
 
-.pagination_item_prev a:active, 
-.pagination_item_next a:active {
+.pagination_item_prev a:active {
     background-color: #d9d9d9;
+    
     color: rgba(0, 0, 0, 0.3);
 }
+
+.pagination_item_next a:active {
+    background-color: #d9d9d9;
+    
+    color: rgba(0, 0, 0, 0.3);
+}
+
+/* ====== Catalog_page_pagination ====== */
