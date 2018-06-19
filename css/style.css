@@ -75,10 +75,15 @@ a {
     background-color: #f0c52e;
 }
 
+.container {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0;
+}
+
 .hidden {
   position: absolute;
   clip: rect(0 0 0 0);
-    
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -90,8 +95,6 @@ a {
     width: 1160px;
     margin: 0 auto;
     margin-top: 21px;
-    
-
 }
 
 .main_navigation {
@@ -105,10 +108,10 @@ a {
 
 .user_navigation_wrapper {
     display: flex; 
+    justify-content: space-between;
     margin: 0;
     margin-bottom: 36px;
     padding: 0 60px; 
-    justify-content: space-between;
 }
 
 .logo {
@@ -162,8 +165,7 @@ a {
     margin: 0;
     padding: 0;
     
-    list-style: none;
-    
+    list-style: none;   
 }
 
 .header_user_navigation a:hover {
@@ -184,28 +186,35 @@ a {
 
 .site_navigation {
     display: flex;
+    justify-content: space-between;
     margin: 0 58px;
     padding: 0;  
-    justify-content: space-between;
     
     list-style: none;
 }
 
 .site_navigation_dropdown {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 650px;
+    height: 150px;
+    padding: 0;
+    
+    z-index: 2;
+    
+    list-style: none;
 }
 
 .site_navigation_dropdown li {
     width: 200px;
     height: 50px;
     margin-right: 20px;
-    
 }
 
 .site_navigation_dropdown li:nth-child(5) {
     height: 100px;
 }
-
 
 .site_navigation a:hover {
     opacity: 0.6;
@@ -227,16 +236,6 @@ a {
 }
 
 .site_navigation_catalog:hover .site_navigation_dropdown {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 650px;
-    height: 150px;
-    padding: 0;
-    
-    z-index: 2;
-    
-    list-style: none;
 }
 
 .site_navigation_dropdown li {
@@ -263,7 +262,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 1160px;
-    margin: 0px auto;
+    margin: 0 auto;
     margin-bottom: 110px;
     padding: 0;
     
@@ -272,8 +271,8 @@ a {
 
 .slider_item {
     display: flex;
-    margin: 0 90px;
     width: auto;
+    margin: 0 90px;
 }
 
 .slider_item img {
@@ -281,8 +280,8 @@ a {
 }
 
 .slider_wrapper {
-    padding: 0;
     width: 550px;
+    padding: 0;
 }
 
 .slider_item:last-child {
@@ -311,8 +310,8 @@ a {
 
 .btn_promo {
     display: block;
-    margin-bottom: 58px;
     width: 220px;
+    margin-bottom: 58px;
     
     text-align: center;
 }
@@ -339,8 +338,7 @@ a {
     font-weight: 300;
     font-style: normal;
     line-height: 20px;
-    letter-spacing: 0.13px;
-    
+    letter-spacing: 0.13px;   
 }
 
 .slider_buttons_list { 
@@ -350,15 +348,14 @@ a {
 /* ====== Slider ====== */
 
 .goods_category_list {
-    width: 1160px;
     display: flex;
+    justify-content: space-between;
+    width: 1160px;
     margin: 0 auto;
     margin-bottom: 80px;
     padding: 0;
-    justify-content: space-between;
     
     list-style: none;
-
 }
 
 .goods_category_item {
@@ -466,9 +463,9 @@ a {
  
 .brands_list {
     display: flex;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
     
     list-style: none;
 }
@@ -596,11 +593,11 @@ a {
 }
 
 .footer_column {
+    display: flex;
+    align-items: center;
     width: 1160px;
     margin: 0 auto;
     padding: 0;
-    display: flex;
-    align-items: center;
 }
 
 .footer_column:first-child {
@@ -621,8 +618,8 @@ a {
 
 .footer_services {
     display: flex;
-    margin: 0 auto;
     width: 440px;
+    margin: 0 auto;
 }
 
 .footer_services li {
@@ -631,8 +628,8 @@ a {
 
 .social_list {
     display: flex;
-    margin: 0 auto;
     justify-content: space-between;
+    margin: 0 auto;
     padding: 10px;
 }
 
@@ -653,7 +650,7 @@ a {
 
 .main_footer address {
     font-style: normal;
-    letter-spacing:normal;
+    letter-spacing: normal;
     color: #ffffff;
 }
 
@@ -838,17 +835,12 @@ a {
 /* ====== Catalog_page_breadcrumbs ====== */
 
 .catalog_wrapper {
-    width: 100%;
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: center;
 }
 
 .filter_container {
     margin: 0;
     padding: 0;
-    width: auto;
     
     background-color: #efefef;
 }
@@ -856,17 +848,16 @@ a {
 .catalog_container {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    width: 850px;
+    margin: 0 auto;
     padding: 0;
-    width: 100%;
 }
 
 .filter {
-    margin: 0;
-    margin-left: 120px;
-    margin-right: 65px;
-    padding-left: 80px;
-    padding-right: 0px;
+    width: 200px;
+    margin: 0 auto;
+    padding-left: 60px;
+    padding-right: 65px;
 }
 
 .filter_title {
@@ -910,10 +901,9 @@ a {
 .sorting{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    justify-content: flex-start;
     margin: 0;
     padding:0;
-    justify-content: flex-start;
     
     background-color: rgba(239, 239, 239, 1);
 }
@@ -958,35 +948,39 @@ a {
 }
 
 .sort_list_priority {
-    list-style: none;
     display: flex;
     padding: 0;
     margin-right: auto;
+    
+    list-style: none;
 }
 
 /* ====== Catalog_page_sorting_field ====== */
 
 .catalog {
-    margin-right: auto;
+    width: 850px;
+    margin: 0 auto;
+    margin-top: 20px;
     padding: 0;
-    padding-left: 60px;
+    padding-left: 50px;
 }
 
 .catalog_list {
     display: flex;
     flex-wrap: wrap;
-    width: 800px;
-    margin-right: auto;
-    padding: 0;
-    padding-left: 20px;
     justify-content: space-between;
+    width: 800px;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
 
     list-style: none;
 }
 
 .catalog_item {
-    margin:20px;
     width: 360px;
+    margin: 10px 20px;
+    
 }
 
 .catalog_item_img:hover {
@@ -1029,10 +1023,11 @@ a {
 
 .pagination_list {
     display: flex;
+    justify-content: space-between;
+    width: 720px;
     margin: 0;
     margin-left: 40px;
-    margin-right: 20px;
-    justify-content:space-around;
+    padding: 20px;
     
     background-color: #ebebeb;
     
