@@ -21,13 +21,13 @@
             </p>   
           </form>
           <ul class="header_user_navigation">
-            <li class="login_link">
+            <li class="header_login_link">
               <a href="#">Войти</a>
             </li>
-            <li class="compare_link">
+            <li class="header_compare_link">
               <a href="#">Сравнить</a>
             </li>
-            <li class="basket">
+            <li class="header_basket">
               <a href="#">Корзина</a>
             </li>
           </ul>
@@ -35,7 +35,7 @@
       
         <ul class="site_navigation">
           <li class="site_navigation_catalog">
-            <a href="catalog.html">Каталог товаров
+            <a href="#">Каталог товаров
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="-4 -6 22 22">
                 <path fill="#272525" d="M16 7H9V0H7v7H0v2h7v7h2V9h7z"/>
               </svg>
@@ -76,9 +76,9 @@
     
     <main class="container">
       <h1 class="hidden">Магазин гаджетов Device</h1>
-      <section class="slider promo">
+      <section class="container slider">
         <h2 class="hidden">Промо-товары</h2>
-        <ul class="slider_list">
+        <ul class="container slider_list">
           <li class="slider_item">
             <img src="img/slider-monopods.png" width="384" height="486" alt="Монопод">
             <div class="slider_wrapper">
@@ -137,21 +137,21 @@
             </div>
           </li>
         </ul>
+        <ul class="slider_buttons_list">
+          <li>
+            <input class="hidden" id="slider_btn_1" type="radio" name="slider_btn" checked>
+            <label for="slider_btn_1"></label>
+          </li>
+          <li>
+            <input class="hidden" id="slider_btn_2" type="radio" name="slider_btn">
+            <label for="slider_btn_2"></label>
+          </li>
+          <li>
+            <input class="hidden" id="slider_btn_3" type="radio" name="slider_btn">
+            <label for="slider_btn_3"></label>
+          </li>
+        </ul>
       </section>
-      <ul class="slider_buttons_list">
-        <li>
-          <input class="hidden" id="slider_btn_1" type="radio" name="slider_btn" checked>
-          <label for="slider_btn_1"></label>
-        </li>
-        <li>
-          <input class="hidden" id="slider_btn_2" type="radio" name="slider_btn">
-          <label for="slider_btn_2"></label>
-        </li>
-        <li>
-          <input class="hidden" id="slider_btn_3" type="radio" name="slider_btn">
-          <label for="slider_btn_3"></label>
-        </li>
-      </ul>
       <!--Слайдер промотоваров-->
 
       <section class="goods_category">
@@ -159,7 +159,7 @@
         <ul class="goods_category_list">
           <li class="goods_category_item">
             <a class="goods_category_link" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="-30 -50 160 160"  width="160" height="160">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 -53 160 160"  width="160" height="160">
                 <g fill="#363636">
                   <path d="M84.131 32.639V20.003c0-1.309 1.045-2.37 2.335-2.37l8.326 1.581V11.02c0-2.355-1.708-3.431-4.202-4.265L67.403.175c1.616 1.391 1.889 2.04 1.889 4.396V49.78c0 2.356-.45 4.066-1.967 5.21l23.265-7.065c2.401-.833 4.202-4.216 4.202-6.572V33.44l-8.326 1.567c-1.29.002-2.335-1.06-2.335-2.368z"/>
                   <path d="M95.129 20.979l-7.598-1.444c-1.008 0-1.824.829-1.824 1.851v9.868c0 1.023.816 1.852 1.824 1.852l7.598-1.431c1.154-.419 1.824-.829 1.824-1.852V22.83c0-1.022-.766-1.507-1.824-1.851zM67.17 4.483c0-5.08-4.232-4.459-4.232-4.459S5.832 4.738 2.838 5.145.001 9.532.001 9.532L0 45.812c0 3.743 2.599 3.753 2.599 3.753l16.477 1.403L27.212 39.3s1.109-1.828 2.505-1.828c1.397 0 2.432 1.861 2.432 1.861l9.061 13.521s18.895 1.909 22.521 1.909c3.626-.001 3.439-5.024 3.439-5.024V4.483zM12.982 37.192c-3.698 0-6.696-4.601-6.696-10.275s2.998-10.275 6.696-10.275c3.698 0 6.696 4.601 6.696 10.275s-2.998 10.275-6.696 10.275zm36.158 1.426c-4.662 0-8.441-5.239-8.441-11.701 0-6.463 3.78-11.702 8.441-11.702 4.662 0 8.442 5.239 8.442 11.702 0 6.462-3.78 11.701-8.442 11.701z"/>
@@ -230,9 +230,8 @@
       </section>
       <!--Категории товаров-->
 
-      <section class="services">
+      <section class=" container services">
         <h2 class="hidden">Дополнительный сервис</h2>
-        <div class="services_wrapper">
           <ul class="services_menu">
             <li>
               <input class="hidden" id="btn_delivery" type="radio" name="sevices" checked>
@@ -254,14 +253,13 @@
             </li>
             <li class="service_item guarantee">
               <h3>Гарантия</h3>
-              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит<br> дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
             </li>
             <li class="service_item credit">
               <h3>Кредит</h3>
-              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+              <p>Залезть в долговую яму стало проще! Кредитные<br> консультанты подберут для вас наиболее выгодные<br> условия кредита. Выгодные для нашего банка, разумеется.</p>
             </li>
           </ul>
-        </div>
       </section>
       <!--Дополнительные сервисы-->
 
@@ -327,13 +325,26 @@
         </a>
         <ul class="footer_user_navigation">
           <li class="login_link">
-            <a href="#">Войти</a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12">
+                <path fill="#f0c52e" d="M.032 12h12.937c-.163-2.643-2.074-4.837-4.671-5.543a3.47 3.47 0 0 0 1.687-2.972 3.485 3.485 0 0 0-6.97 0c0 1.264.68 2.361 1.688 2.972C2.106 7.163.194 9.357.032 12z"/>
+              </svg>Войти
+            </a>
           </li>
           <li class="compare_link">
-            <a href="#">Сравнить</a>   
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                <path fill="#f0c52e" d="M8 2h1.984v8H8zM0 3h1.984v7H0zM4 0h2v10H4z"/>
+              </svg>Сравнить
+            </a>   
           </li>
           <li class="basket"> 
-            <a href="#">Корзина</a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                <path fill="#f0c52e" d="M11.864 3.017a.429.429 0 0 0-.327-.154H9.225V4.09c0 .563-.484 1.022-1.08 1.022-.594 0-1.078-.458-1.078-1.022V2.863H4.909V4.09c0 .563-.485 1.022-1.08 1.022-.595 0-1.078-.458-1.078-1.022V2.863H.438a.43.43 0 0 0-.327.154.472.472 0 0 0-.108.358l.776 7.134c.015.806.642 1.455 1.411 1.455h7.595c.77 0 1.396-.649 1.411-1.455l.776-7.134a.476.476 0 0 0-.108-.358z"/>
+                <path fill="#f0c52e" d="M3.829 4.499c.239 0 .433-.184.433-.409V1.84c0-.632.672-1.022 1.295-1.022h1.079c.655 0 1.078.401 1.078 1.022v2.25c0 .225.194.409.431.409.239 0 .433-.184.433-.409V1.84C8.577.773 7.761 0 6.636 0H5.557c-1.19 0-2.159.826-2.159 1.84v2.25c0 .225.194.409.431.409z"/>
+              </svg>Корзина
+            </a>
           </li>
         </ul>
       </div>
@@ -355,13 +366,19 @@
       <div class="footer_row">
         <ul class="social_list">
           <li>
-            <a class="btn btn_grey social_btn" href="#">facebook</a>
+            <a class="btn btn_grey social_btn" href="#">
+              <img src="img/icons/icon-facebook.svg" alt="facebook">
+            </a>
           </li>
           <li>
-            <a class="btn btn_grey social_btn" href="#">instagram</a>
+            <a class="btn btn_grey social_btn" href="#">
+              <img src="img/icons/icon-instagram.svg" alt="instagram">
+            </a>
           </li>
           <li>
-            <a class="btn btn_grey social_btn" href="#">twitter</a>
+            <a class="btn btn_grey social_btn" href="#">
+              <img src="img/icons/icon-twitter.svg" alt="twitter">
+            </a>
           </li>
         </ul>
         <a class="htmlacademy_logo" href="https://htmlacademy.ru/intensive/htmlcss">
