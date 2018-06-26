@@ -501,6 +501,11 @@ a {
     right: 34px
 }
 
+.slider_item:first-child img {
+    margin-left: 91px;
+    
+}
+
 .slider_item:nth-child(2) img {
     margin-left: 117px;
     margin-top: 10px;
