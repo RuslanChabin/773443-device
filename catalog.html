@@ -16,7 +16,7 @@
           <form class="searching_form" action="https://echo.htmlacademy.ru" method="get">
             <p>
               <label class="hidden" for="search">Форма поиска по сайту</label> 
-              <input id="search" type="search" name="search" placeholder="Поиск по сайту">  
+              <input id="search" type="text" name="search" placeholder="Поиск по сайту">  
               <a class="btn_search" href="#">Найти</a> 
             </p>   
           </form>
@@ -167,31 +167,23 @@
           <h2 class="sorting_title">Сортировка:</h2>
           <ul class="sort_list_category">
             <li>
-              <a href="#">По цене</a>
+              <input class="sorting_price" type="button" name="sorting_price" value="По цене" disabled>
             </li>
             <li>
-              <a href="#">По типу</a>
+              <input class="sorting_type" type="button" name="sorting_type" value="По типу">
             </li> 
             <li>
-              <a href="#">По популярности</a>
+              <input class="sorting_popularity" type="button" name="sorting_popularity" value="По популярности">
             </li>  
           </ul>
           <ul class="sort_list_priority">
             <li>
-              <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="25" viewBox="0 -15 11 25">
-                  <path fill="#231F20" d="M5.5 0L0 10h11z"/>
-                </svg>
-                <span class="hidden">Сортировать по возрастающей</span>
-              </a>
+              <input class="sorting_high" type="button" name="sorting_high" value="">
+              <span class="hidden">Сортировать по возрастающей</span>
             </li>
             <li>
-              <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="25" viewBox="0 -15 11 25">
-                  <path fill="#231F20" d="M5.5 10L0 0h11"/>
-                </svg>
-                <span class="hidden">Сортировать по убывающей</span>
-              </a>
+              <input class="sorting_low" type="button" name="sorting_low" value="" disabled>
+              <span class="hidden">Сортировать по убывающей</span>
             </li>
           </ul>
         </section>
@@ -221,9 +213,9 @@
               </p>
               <h3>
                 <a href="#">
-                  <span class="catalog_category">Профессиональная<br> селфи-палка</span>
+                  <span class="catalog_category">Профессиональная селфи-палка</span>
                 </a>
-                <span class="catalog_item_price">1500 руб.</span>
+                <span class="catalog_item_price">1 500 руб.</span>
               </h3>
               <p class="catalog_item_hover">
                 <a class="btn btn_yellow btn_basket" href="#">В корзину</a>
@@ -252,7 +244,7 @@
               </p>
               <h3>
                 <a href="#">
-                  <span class="catalog_category">Селфи-палка &laquo;Следуй за<br> мной&raquo; </span>
+                  <span class="catalog_category">Селфи-палка &laquo;Следуй за мной&raquo; </span>
                 </a>
                 <span class="catalog_item_price">4 900 руб.</span>
               </h3>          
