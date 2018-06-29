@@ -9,7 +9,7 @@
   <body>
     <header class="container">
       <nav class="main_navigation">
-        <a class="logo_disabled">
+        <a class="logo">
           <img src="img/logo.png" width="164" height="36" alt="Логотип магазина Device">
         </a>
         <div class="user_navigation_wrapper">
@@ -296,7 +296,7 @@
         <div class="device_information_wrapper">
           <div class="about_us">
             <h3>О нас</h3>
-            <p>Огромный выбор гаджетов не оставит равнодушным гика,который есть в каждом из нас.</p>
+            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
             <ul class="about_us_list">
               <li>Деловые Линии</li>
@@ -321,7 +321,7 @@
     <footer class="main_footer">
       <div class="container">
       <div class="footer_row">
-        <a class="footer_logo_disabled">
+        <a class="footer_logo">
           <img src="img/logo-yellow.png" width="164" height="36" alt="Логотип магазина Device">
         </a>
         <ul class="footer_user_navigation">
@@ -390,28 +390,34 @@
   </footer>
   
   <section class="modal modal_write_us">
-    <button class="btn btn_yellow btn_modal_write_us_close" type="button">Закрыть</button> 
+    <button class="btn btn_modal_close" type="button">Закрыть</button> 
     <h2 class="hidden">Обратная связь</h2>
     <form class="modal_form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="modal_write_us_item">
-        <label for="user_name">Ваше имя:</label>
-        <input id="user_name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p class="modal_write_us_item">
-        <label for="user_email">Ваш e-mail:</label>
-        <input id="user_email" type="email" name="email" placeholder="email@example.com">
-      </p>
-      <p class="modal_write_us_message">
-        <label for="message_area">Текст письма:</label>
-        <textarea id="message_area" name="message" rows="10" placeholder="В свободной форме"></textarea>
-      </p>
-      <button class="btn btn_yellow btn_modal_write_us_submit" type="submit">Отправить</button> 
+      <div class="modal_wrapper">
+        <p class="modal_write_us_item">
+          <label for="user_name">Ваше имя:</label>
+          <input id="user_name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p class="modal_write_us_item">
+          <label for="user_email">Ваш e-mail:</label>
+          <input id="user_email" type="email" name="email" placeholder="email@example.com">
+        </p>
+      </div>
+      <div class="modal_wrapper">
+        <p class="modal_write_us_message">
+          <label for="message_area">Текст письма:</label>
+          <textarea id="message_area" name="message" rows="7" placeholder="В свободной форме"></textarea>
+        </p>
+      </div>
+      <div class="modal_wrapper">
+        <button class="btn btn_yellow btn_modal_write_us_submit" type="submit">Отправить</button> 
+      </div>
     </form>  
   </section>
   <!--Форма обратной связи-->
   
   <section class="modal modal_map">
-    <button class="btn btn_yellow btn_modal_map_close" type="button">Закрыть</button> 
+    <button class="btn btn_modal_close" type="button">Закрыть</button> 
     <h2 class="hidden">Подробная карта</h2>
     <p>
       <img src="img/map-big.jpg" width="960" height="559" alt="г.Москва, ул.Строителей, 15">
