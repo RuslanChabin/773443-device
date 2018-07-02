@@ -1403,11 +1403,13 @@ img {
     right: 22px;
 }
 
-.btn_modal_close:hover {
+.btn_modal_close:hover,
+.btn_map_close:hover {
     opacity: 1; 
 }
 
-.btn_modal_close:active {
+.btn_modal_close:active,
+.btn_map_close:active {
     opacity: 0.3;
 }
 
