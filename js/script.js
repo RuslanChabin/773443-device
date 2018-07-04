@@ -7,12 +7,12 @@ var closeBtnMap = mapPopup.querySelector(".btn_map_close");
 var form = popup.querySelector(".modal_form");
 var userName = popup.querySelector("[name=name]");
 var userMail = popup.querySelector("[name=email]");
-var letter = popup.querySelector("[message]");
+var letter = popup.querySelector("[name=message]");
 var isStorageSupport = true;
 var storage = "";
   
 try {
-  storage = localStorage.getItem("login");
+  storage = localStorage.getItem("userName");
 } catch (err) {
   isStorageSupport = false;
 };
@@ -47,7 +47,7 @@ closeBtnMap.addEventListener("click", function (evt){
 
 form.addEventListener("submit", function (evt){
   evt.preventDefault();
-  if (!userName.value || !userMail.value || !letter.value) {
+  if (!userName.value || !userMail.value || !letter.value || userMail.value.length < 6) {
     evt.preventDefault();
     popup.classList.remove("modal_error");
     popup.offsetWidth = popup.offsetWidth;
@@ -56,7 +56,7 @@ form.addEventListener("submit", function (evt){
       if (isStorageSupport) {
         localStorage.setItem("userName", userName.value);
         localStorage.setItem("userMail", userMail.value);
-        localStorage.setItem("message", letter.value);
+        localStorage.setItem("letter", letter.value);
       }
     }
 });
