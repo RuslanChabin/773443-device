@@ -47,17 +47,16 @@ closeBtnMap.addEventListener("click", function (evt){
 
 form.addEventListener("submit", function (evt){
   evt.preventDefault();
-  if (!userName.value || !userMail.value || !letter.value || userMail.value.length < 6) {
-    evt.preventDefault();
-    popup.classList.remove("modal_error");
-    popup.offsetWidth = popup.offsetWidth;
-    popup.classList.add("modal_error");
+  if (userName.value && userMail.value && letter.value) {
+    localStorage.clear();
+    localStorage.setItem("userName", userName.value);
+    localStorage.setItem("userMail", userMail.value);
+    localStorage.setItem("letter", letter.value);
     } else {
-      if (isStorageSupport) {
-        localStorage.setItem("userName", userName.value);
-        localStorage.setItem("userMail", userMail.value);
-        localStorage.setItem("letter", letter.value);
-      }
+      evt.preventDefault();
+      popup.classList.remove("modal_error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal_error");
     }
 });
 
