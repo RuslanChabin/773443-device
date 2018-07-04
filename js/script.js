@@ -46,7 +46,6 @@ closeBtnMap.addEventListener("click", function (evt){
 
 
 form.addEventListener("submit", function (evt){
-  evt.preventDefault();
   if (userName.value && userMail.value && letter.value) {
     localStorage.clear();
     localStorage.setItem("userName", userName.value);
