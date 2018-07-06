@@ -60,13 +60,13 @@ form.addEventListener("submit", function (evt){
 });
 
 window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal_show")) {
-        popup.classList.remove("modal_show");
-        popup.classList.remove("modal_error");
-      } if (mapPopup.classList.contains("modal_show")) {
-        mapPopup.classList.remove("modal_show")
-      }
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (popup.classList.contains("modal_show")) {
+      popup.classList.remove("modal_show");
+      popup.classList.remove("modal_error");
+    } if (mapPopup.classList.contains("modal_show")) {
+      mapPopup.classList.remove("modal_show")
     }
-  });
+  }
+});

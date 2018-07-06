@@ -78,7 +78,7 @@
     </header>
   
     <main class="container">
-      <div class="breadcrumbs_container">
+      <div class="breadcrumbs_container container">
         <h1 class="page_title">Моноподы для селфи</h1>
         <ol class="breadcrumbs">
           <li>
@@ -99,7 +99,7 @@
         </ol>
       </div>
 
-      <div class="catalog_wrapper">
+      <div class="catalog_wrapper container">
         <section class="filter">
           <h2 class="filter_title">Фильтр:</h2>
           <form class="filter_form" method="get" action="https://echo.htmlacademy.ru">
@@ -110,8 +110,10 @@
                   <div class="scale">
                     <div class="bar"></div>
                   </div>
-                  <div class="toggle toggle_min"></div>
-                  <div class="toggle toggle_max"></div>
+                  <input class="hidden" id="toggle_min_price" type="text" value="Минимальная цена">
+                  <label class="toggle toggle_min" for="toggle_min_price"></label>
+                  <input class="hidden" id="toggle_max_price" type="text" value="Максимальная цена">
+                  <label class="toggle toggle_max" for="toggle_max_price"></label>
                 </div>
               <div class="price_controls">
                 <label class="min_price">от <input name="min_price" type="text" value="0"></label>
@@ -178,12 +180,14 @@
           </ul>
           <ul class="sort_list_priority">
             <li>
-              <span class="hidden">Сортировать по возрастающей</span>
-              <a class="sorting_high" href="#"></a>
+              <a class="sorting_high" href="#">
+                <span class="hidden">Сортировать по возрастающей</span>
+              </a>
             </li>
             <li>
-              <span class="hidden">Сортировать по убывающей</span>
-              <a class="sorting_low"></a>
+              <a class="sorting_low">
+                <span class="hidden">Сортировать по убывающей</span>
+              </a>
             </li>
           </ul>
         </section>
@@ -237,8 +241,7 @@
                 <a class="btn_grey btn_compare" href="#">Добавить к сравнению</a>
               </p>
             </li> 
-            <li class="catalog_item">
-              <span class="new_article_logo">NEW</span>
+            <li class="catalog_item new_article_logo">
               <p class="catalog_item_img">
                 <img src="img/monopod-follow-me.jpg" width="360" height="380" alt="Селфи-палка &laquo;Следуй за мной&raquo;">
               </p>
@@ -332,16 +335,19 @@
           <ul class="social_list">
           <li>
             <a class="btn btn_grey social_btn" href="#">
+              <span class="hidden">Кнопка Facebook</span>
               <img src="img/icons/icon-facebook.svg" alt="facebook" width="32" height="32">
             </a>
           </li>
           <li>
             <a class="btn btn_grey social_btn" href="#">
+              <span class="hidden">Кнопка Instagram</span>
               <img src="img/icons/icon-instagram.svg" alt="instagram" width="32" height="32">
             </a>
           </li>
           <li>
             <a class="btn btn_grey social_btn" href="#">
+              <span class="hidden">Кнопка Twitter</span>
               <img src="img/icons/icon-twitter.svg" alt="twitter" width="32" height="32">
             </a>
           </li>
