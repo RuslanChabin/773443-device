@@ -1060,7 +1060,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 17px;
 }
 
 .about_us {
@@ -1100,13 +1100,14 @@ img {
 
 .about_us_list {
     font-family: "Gilroy", "Verdana", sans-serif;
+    font-size: 16px;
     font-weight: 800;
     font-style: normal;
     color: #000000;
-    margin-top: 70px;
-    margin-bottom: 61px;
-    letter-spacing: 0.62px;
+    line-height: 40px;
   
+    margin-top: 64px;
+    margin-bottom: 58px;
     margin-left: -4px;
     
     list-style: none;
@@ -1114,8 +1115,6 @@ img {
 
 .about_us_list li {
     position: relative;
-    
-    margin-bottom:  10px;
 }
 
 .about_us_list li::before {
@@ -1136,12 +1135,17 @@ img {
 .about_us p {
     width: 487px;
     margin-bottom: 31px;
+  
+    font-family: "Open Sans", "Verdana", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 30px;
 }
 
 .btn_about_us {  
     display: block;
     width: 260px;
-    padding-top: 8px;
+    padding-top: 6px;
     padding-bottom: 8px;
   
     background-image: -webkit-linear-gradient(#ffffff 16px, #f0c52e 16px, #f0c52e 22px, #ffffff 22px, #ffffff 100%);
@@ -1154,7 +1158,7 @@ img {
 .btn_write {
     display: block;
     width: 260px;
-    padding-top: 8px;
+    padding-top: 6px;
     padding-bottom: 8px;
     
     background-image: -webkit-linear-gradient(#ffffff 16px, #f0c52e 16px, #f0c52e 22px, #ffffff 22px, #ffffff 100%);
@@ -1171,17 +1175,18 @@ img {
 
 .contacts a {
     display: block;
-    margin-bottom: 62px;
+    margin-bottom: 64px;
 }
 
 /* ====== About ====== */
 
 .main_footer {
     width: auto;
+    min-height: 323px;
     margin: 0;
     padding: 0;
     padding-top: 57px;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
   
     background-color: #464646;
 }
@@ -1623,6 +1628,9 @@ img {
 .modal_map iframe {
     position: relative;
     z-index: 5;
+  
+    width: 960px;
+    height: 559px;
 
     border: none;
 }
