@@ -1182,7 +1182,6 @@ img {
 
 .main_footer {
     width: auto;
-    min-height: 323px;
     margin: 0;
     padding: 0;
     padding-top: 57px;
@@ -1794,7 +1793,8 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-width: 830px;
+    width: 830px;
+    padding: 0;
 }
 
 .filter {
@@ -1838,7 +1838,7 @@ img {
     left: -1px;
     
     display: block;
-    width: 201px;
+    width: 200px;
     height: 2px;
   
     background: #000000;
@@ -2049,6 +2049,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    width: 830px;
     min-height: 70px;
   
     background-color: rgba(0, 0, 0, 0.08);
